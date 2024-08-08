@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Example</title>
+    <style>
+        /* Basic styles for the navigation menu */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar .menu-title {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            padding: 14px 20px;
+            font-weight: bold;
+        }
+        
+
+        
+        /* Styles for sections */
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        /* Styles for the menu element */
+        menu {
+            display: block;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+        menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        menu a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span class="menu-title">Menu</span>
+        <nav>
+            <ul >
+                <li><a href="#home">Home</a></li>
+                <li style="float: left;"><a href="#about">About</a></li>
+                <li style="float: left;"><a href="#services">Services</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Main content of the page -->
+    <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the home section of the page with introductory content.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This section provides information about our company and team.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Details about the services we offer can be found here.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us through this contact section.</p>
+    </section>
+    <!-- Additional menu with <menu> element -->
+    <menu type="toolbar">
+        <a style="float: left;" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </menu>
+</body>
+</html>
+
+    <!-- style="float: left;"=element to float it to the left.  -->
